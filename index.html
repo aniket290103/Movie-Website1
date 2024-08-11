@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/70142788c5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        @media (max-width: 320px) {
+            #nav {
+                flex-direction: column;
+                height: auto;
+                background-color: black;
+            }
+
+            #nav #nav1 {
+                width: 100%;
+                border: 2px solid gray;
+            }
+
+            #nav1 h1 {
+                font-size: 1rem;
+            }
+
+            #nav2 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid gray;
+            }
+
+            #nav2 ul {
+                flex-direction: row;
+                gap: 2px;
+            }
+
+            #nav2 li {
+                text-align: center;
+                width: 20%;
+                font-size: 1rem;
+            }
+
+            #nav3 {
+                width: 100%;
+                border: 2px solid gray;
+            }
+
+            #nav3 i {
+                font-size: medium;
+            }
+
+            #result {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 425px) {
+            #nav {
+                flex-direction: column;
+                height: auto;
+                background-color: black;
+            }
+
+            #nav #nav1 {
+                width: 100%;
+                border: 2px solid gray;
+            }
+
+            #nav1 h1 {
+                font-size: 1.2rem;
+            }
+
+            #nav2 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid gray;
+            }
+
+            #nav2 ul {
+                flex-direction: row;
+                gap: 5px;
+            }
+
+            #nav2 li {
+                text-align: center;
+                width: 20%;
+                font-size: 1.2rem;
+            }
+
+            #nav3 {
+                width: 100%;
+                border: 2px solid gray;
+            }
+
+            #nav3 i {
+                font-size: large;
+            }
+
+            #result {
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #nav {
+                flex-direction: column;
+                height: auto;
+                background-color: black;
+            }
+
+            #nav #nav1 {
+                width: 100%;
+                border: 2px solid gray;
+            }
+
+            #nav1 h1 {
+                font-size: 1.2rem;
+            }
+
+            #nav2 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid gray;
+            }
+
+            #nav2 ul {
+                flex-direction: row;
+                gap: 5px;
+            }
+
+            #nav2 li {
+                text-align: center;
+                width: 20%;
+                font-size: 1.2rem;
+            }
+
+            #nav3 {
+                width: 100%;
+                border: 2px solid gray;
+            }
+
+            #nav3 i {
+                font-size: large;
+            }
+
+            #result {
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="w-[100vw] flex justify-center items-center flex-col">
+    <nav id="nav" class="h-[10vh] w-[100vw]  flex justify-center items-center bg-black text-white">
+        <div id="nav1" class="h-[10vh] w-[20%]  flex justify-center items-center">
+            <h1 class="text-3xl animate__animated animate__zoomIn animate__infinite">4K MOVIES </h1>
+        </div>
+        <div id="nav2" class="h-[10vh] w-[60%]  flex-justify-center items-center">
+            <ul class="h-[10vh] w-[100%] flex justify-center items-center gap-10">
+                <li class="hover:bg-white hover:text-black p-2 rounded-md hover:cursor-pointer text-2xl">Home</li>
+                <li class="hover:bg-white hover:text-black p-2 rounded-md hover:cursor-pointer text-2xl">Services</li>
+                <li class="hover:bg-white hover:text-black p-2 rounded-md hover:cursor-pointer text-2xl">About</li>
+                <li class="hover:bg-white hover:text-black p-2 rounded-md hover:cursor-pointer text-2xl">Contact</li>
+            </ul>
+        </div>
+        <div id="nav3" class="h-[10vh] w-[20%]  flex justify-center items-center gap-10 ">
+            <i
+                class="fa-solid fa-user fa-2x bg-red hover:bg-white hover:text-black p-2 rounded-md hover:cursor-pointer"></i>
+            <i class="fa-solid fa-gear fa-2x hover:bg-white hover:text-black p-2 rounded-md hover:cursor-pointer"></i>
+        </div>
+    </nav>
+    <div id="result" class="  border w-[80vw] h-[100%] flex justify-center items-center flex-wrap">
+    </div>
+    <div id="result2"></div>
+    <button onclick="load()"
+        class="bg-black  text-white text-xl p-2 rounded-md shadow m-2 hover:bg-white hover:text-black p-2  border-solid border-2 border-black rounded-md hover:cursor-pointer ">Load
+        Movies</button>
+    <div id="result3"></div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
