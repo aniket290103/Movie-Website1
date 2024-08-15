@@ -54,7 +54,7 @@ function load() {
                 <p class="text-grey-500 font-medium"> Rating : ${val.rating} </p>
                 <p class="text-grey-500 font-medium ">Ticket Price : ${val.price} </p>
                 <p class="text-blue-600 font-me₹diuborder-b-4 border-red-800">Releasing On : ${val.date} </p>
-                <a href="https://in.bookmyshow.com/" target="_blank"><button class="bg-blue-800 text-white w-[100%] p-2 mt-3 rounded-md shadow-lg hover:bg-blue-600 hover:text-white p-2  hover:cursor-pointer"> Book Now </button></a>
+                <a href="https://www.justwatch.com/in/movies" target="_blank"><button class="bg-blue-800 text-white w-[100%] p-2 mt-3 rounded-md shadow-lg hover:bg-blue-600 hover:text-white p-2  hover:cursor-pointer"> Book Now </button></a>
             </div>
         </div>
 
